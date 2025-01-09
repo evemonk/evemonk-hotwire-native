@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C58878482D30801700C73045 /* HotwireNative in Frameworks */ = {isa = PBXBuildFile; productRef = C58878472D30801700C73045 /* HotwireNative */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C588782E2D30744600C73045 /* EveMonk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EveMonk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58878482D30801700C73045 /* HotwireNative in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 			);
 			name = EveMonk;
 			packageProductDependencies = (
+				C58878472D30801700C73045 /* HotwireNative */,
 			);
 			productName = EveMonk;
 			productReference = C588782E2D30744600C73045 /* EveMonk.app */;
@@ -107,6 +113,9 @@
 			);
 			mainGroup = C58878252D30744600C73045;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C58878462D30801700C73045 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C588782F2D30744600C73045 /* Products */;
 			projectDirPath = "";
@@ -333,6 +342,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C58878462D30801700C73045 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hotwired/hotwire-native-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C58878472D30801700C73045 /* HotwireNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C58878462D30801700C73045 /* XCRemoteSwiftPackageReference "hotwire-native-ios" */;
+			productName = HotwireNative;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C58878262D30744600C73045 /* Project object */;
 }
